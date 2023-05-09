@@ -1,0 +1,44 @@
+{
+    "validators": [
+        {
+            "field": "name",
+            "validator": [
+                {
+                    "required": true
+                }
+            ]
+        },
+        {
+            "field": "country",
+            "validator": [
+                {
+                    "required": true
+                }
+            ]
+        },
+        {
+            "field": "state",
+            "validator": [
+                {
+                    "required": true
+                }
+            ]
+        },
+        {
+            "field": "email",
+            "validator": [
+                {
+                    "required": true
+                }
+            ]
+        },
+        {
+            "field": "contact_number",
+            "validator": [
+                {
+                    "required": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="form">
+          <p class="ques">Can you please provide your personal details?</p>
+
+          <div class="nameArea">
+            <p id="gap"><b>Name</b></p>
+            <input id="in" type="text" name="name" required />
+          </div>
+
+          <div class="dob">
+            <p id="gap"><b>Date</b></p>
+            <input id="in" type="date" name="bdate" required />
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+
+          <div class="ContactNoArea">
+            <p id="gap"><b>Contact Number</b></p>
+            <input id="in" type="text" name="contactNo" required />
+          </div>
+
+          <div class="country">
+            <p id="gap"><b>Country</b></p>
+            <select id="in" onchange="buildStateDropdown()" required>
+              <option hidden value=""></option>
+            </select>
+          </div>
+
+          <div class="state">
+            <p id="gap"><b>State</b></p>
+            <select id="in" required>
+              <option hidden value=""></option>
+            </select>
+          </div>
+
+          <div class="email">
+            <p id="gap"><b>Your Email</b></p>
+            <input id="in" type="text" name="email" required />
+          </div>
+
+          <div class="btn">
+            <div class="submit" onclick="onSubmit()">Submit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="iframe.js"></script>
+  </body>
+
+</html>
